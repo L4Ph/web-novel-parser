@@ -1,9 +1,10 @@
 {
     "name": "@l4ph/web-novel-parser",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "exports": "./mod.ts",
     "publish": {
         "include": [
+            "mod.ts",
             "LICENSE",
             "README.md",
             "src/**/*.ts"
