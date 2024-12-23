@@ -14,9 +14,9 @@ export function parseKakuyomuRuby(input: string): string {
     }
     
     else if (output.startsWith('《')) {
-        let rubyStart: i32 = output.indexOf('《');
+        let rubyStart: number = output.indexOf('《');
         while (rubyStart !== -1) {
-            const rtEnd: i32 = output.indexOf('》', rubyStart);
+            const rtEnd: number = output.indexOf('》', rubyStart);
     
             if (rtEnd !== -1) {
                 const rubyText = output.substring(rubyStart + 1, rtEnd);
@@ -44,6 +44,6 @@ export function parseKakuyomuRuby(input: string): string {
     return output;
 }
 
-function isDelimiter(char: string): bool {
+function isDelimiter(char: string): boolean {
     return char === ' ' || char === '　' || char === '、' || char === '。';
 }

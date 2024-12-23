@@ -3,14 +3,14 @@ import { parseKakuyomuEmphasisDots } from "./emphasis/parse-kakuyomu-emphasis-do
 
 /**
  * 
- * @param input なろう記法の小説
- * @returns なろう記法で書かれた小説のHTML
+ * @param input カクヨム記法の小説
+ * @returns カクヨム記法で書かれた小説のHTML
  */
 
 export function parseKakuyomuNovel(input: string): string {
     const lines = input.split('\n');
     let result = "";
-    let lineId: i32 = 1;
+    let lineId: number = 1;
 
     for (let i = 0; i < lines.length; i++) {
         let line = lines[i];

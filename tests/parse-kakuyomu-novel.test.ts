@@ -1,5 +1,5 @@
 import { describe, expect, it } from "bun:test";
-import { parseKakuyomuNovel } from "../assembly/index";
+import { parseKakuyomuNovel } from "../mod";
 
 describe("parseTextArea", () => {
     it("should parse text with ruby notation and wrap lines with <p> tags and ids, including whitespace and newlines", () => {

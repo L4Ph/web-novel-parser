@@ -1,7 +1,7 @@
 import { describe, expect, it } from "bun:test";
-import { parseKakuyomuRuby } from "../../assembly/ruby/parse-kakuyomu-ruby";
+import { parseKakuyomuRuby } from "../../src/ruby/parse-kakuyomu-ruby";
 
-describe("ルビの変換", () => {
+describe("ルビの変換(カクヨム記法)", () => {
   // KakuyomuRubyのテスト
   it("KakuyomuRuby: 冴えない彼女《ヒロイン》の育てかた が正しく変換される。", () => {
     // biome-ignore lint/style/noUnusedTemplateLiteral: <explanation>

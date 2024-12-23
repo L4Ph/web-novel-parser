@@ -6,17 +6,17 @@
 
 export function parseKakuyomuEmphasisDots(input: string): string {
   let result = '';
-  let i: i32 = 0;
+  let i: number = 0;
 
   while (i < input.length) {
-    const start: i32 = input.indexOf('《《', i);
+    const start: number = input.indexOf('《《', i);
     if (start === -1) {
       result += input.slice(i);
       break;
     }
 
     result += input.slice(i, start);
-    const end: i32 = input.indexOf('》》', start);
+    const end: number = input.indexOf('》》', start);
 
     if (end === -1) {
       result += input.slice(start);
