@@ -1,6 +1,6 @@
 {
   "name": "web-novel-parser",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "module": "./dist/index.js",
   "types": "./dist/mod.d.ts",
   "files": [
